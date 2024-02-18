@@ -16,6 +16,23 @@
        $age = 47;
     ?>
     Mon nom est <?php echo $nom; ?>, et mon age est <?php echo $age; ?> ans.
+    
+    <article>
+        <?php
+            $texte = "Bonjour je m'appelle";
+            $texte1 = "Bonjour les \"amis\"";
+            // \ permet d'indiquer au navigateur que la quote est du texte
+            echo $texte1;
+            echo $texte[0];
+            // l'array indique le numéro de la lettre de la string à afficher, ici 0 est la première lettre B
+        ?>
+    </article>
+    <article>
+        <?php
+        $age1 = 50;
+            echo "\$age = $age";
+        ?>
+    </article>
 </body>
 
 </html>
