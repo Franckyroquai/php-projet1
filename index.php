@@ -17,4 +17,5 @@
     ?>
     Mon nom est <?php echo $nom; ?>, et mon age est <?php echo $age; ?> ans.
 </body>
+
 </html>
