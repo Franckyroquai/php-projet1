@@ -18,6 +18,7 @@
     Mon nom est <?php echo $nom; ?>, et mon age est <?php echo $age; ?> ans.
     
     <article>
+        <br>
         <?php
             $texte = "Bonjour je m'appelle";
             $texte1 = "Bonjour les \"amis\"";
@@ -28,9 +29,40 @@
         ?>
     </article>
     <article>
+        <br>
         <?php
         $age1 = 50;
             echo "\$age = $age";
+        ?>
+    </article>
+    <article>
+        <br>
+        <?php
+            echo "Concatenation";
+        ?>
+    </article>
+    <article>
+        <br>
+        <?php
+            $var = "Bonjour";
+            echo $var," les amis !"." Comment allez-vous ?"; //, ou . permettent de concatener
+            echo "$var les amis !"." Comment allez-vous ?"; 
+            echo "\$var les amis !"." Comment allez-vous ?";
+        ?>
+    </article>
+    <article>
+        <br>
+        <?php
+            echo "Les constantes";
+        ?>
+    </article>
+    <article>
+        <br>
+        <?php
+            define("URL_SITE","https://localhost/1-Projets-php/php-projet1/");
+            const AGE_TONY = 50;
+            echo "L'url de notre site est : ".URL_SITE;
+            echo "L'âge de Tony est ". AGE_TONY." ans.";
         ?>
     </article>
 </body>
