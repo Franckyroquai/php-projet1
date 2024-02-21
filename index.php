@@ -65,6 +65,64 @@
             echo "L'âge de Tony est ". AGE_TONY." ans.";
         ?>
     </article>
+    <article>
+        <br>
+        <?php
+            
+            echo "Les opérateurs arithméthiques";
+        ?>
+    </article>
+    <article>
+        <br>
+        <?php
+        $x = 5;
+        $y = 10;
+        $z = $x + $y;
+            echo "z = ".$z ."; ";
+            echo "y - x = " ,$y - $x ."; ";
+            echo "y * x = " .$y * $x."; ";
+            echo "7 % 2 = ",7 % 2,";";
+            echo 7%2;
+            echo 8%2;
+        ?>
+    </article>
+    <!-- /Incrementation/ -->
+    <article>
+        <br>
+        <?php
+            echo "La valeur de \$x est ".$x++;
+            echo "<br>la nouvelle valeur de \$x est ".$x;
+        ?>
+        <br>
+        <?php
+            echo "La valeur de \$x est ".++$x;
+            echo "<br>la nouvelle valeur de \$x est ".$x;
+        ?>
+        <br>
+        <?php
+            echo "La valeur de \$x est ".$x--;
+            echo "<br>la nouvelle valeur de \$x est ".$x;
+        ?>
+        <br>
+        <?php
+            echo "La valeur de \$x est ".--$x;
+            echo "<br>la nouvelle valeur de \$x est ".$x;
+        ?>
+        <br>
+        <?php
+            $x += 5;
+            echo "+ 5, la valeur de \$x est ".$x;
+        ?>
+        <?php
+            $x -= 5;
+            echo "- 5, la valeur de \$x est ".$x;
+        ?>
+        <?php
+            $x *= 5;
+            echo "x 5, la valeur de \$x est ".$x;
+        ?>
+        
+    </article>
 </body>
 
 </html>
