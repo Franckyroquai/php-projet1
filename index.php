@@ -121,7 +121,39 @@
             $x *= 5;
             echo "x 5, la valeur de \$x est ".$x;
         ?>
-        
+    </article>
+    <article>
+        <br>
+        <h3>Les operateurs de comparaison</h3>
+    </article>
+    <article>
+        <br>
+        <?php
+            $x = 10;
+            $y = 10.0;
+            $z = 15;
+            $texte = "Bonjour";
+            var_dump($x);
+            echo " ; ";
+            var_dump($texte);
+            echo " ; ";
+            var_dump($y);
+            echo " ; ";
+            var_dump($x==$y);
+            echo " ; ";
+            var_dump($x===$y);
+            echo " ; ";
+            var_dump($x!=$y);echo " ; ";
+            var_dump($x!==$y);
+            echo " ; ";
+            var_dump($x < $z);
+            echo " ; ";
+            var_dump($x <= $z);
+            // == égalité au sens large -> on teste uniquement la valeur
+            // === egalite au sens strict -> valeur et type
+            // != différence au sens large
+            // !== différence au sens strict
+        ?>
     </article>
 </body>
 
