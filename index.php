@@ -69,7 +69,7 @@
         <br>
         <?php
             
-            echo "Les opérateurs arithméthiques";
+            echo "Les opérateurs arithmétiques";
         ?>
     </article>
     <article>
