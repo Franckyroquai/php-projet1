@@ -248,6 +248,22 @@
         
         ?>
     </article>
+    <article>
+        <br>
+        <h3>La boucle Do While</h3>
+    </article>
+    <article>
+        <br>
+        <?php
+       
+       $a = 0;
+       do {
+        echo $a."Bonjour <br>";
+        $a++;
+       } while ($a <= 10);
+        
+        ?>
+    </article>
 </body>
 
 </html>
