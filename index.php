@@ -232,6 +232,22 @@
         
         ?>
     </article>
+    <article>
+        <br>
+        <h3>La boucle While</h3>
+    </article>
+    <article>
+        <br>
+        <?php
+        $var = 0;
+        while ($var < 20) {
+            echo "5 x ".$var." = ".$var*5;
+            echo "<br>";
+            $var++;
+        }
+        
+        ?>
+    </article>
 </body>
 
 </html>
