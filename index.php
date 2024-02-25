@@ -190,6 +190,34 @@
         
         ?>
     </article>
+    <article>
+        <br>
+        <h3>L'instruction conditionnelle Switch</h3>
+        <!-- Teste des cas précis  -->
+    </article>
+    <article>
+        <br>
+        <?php
+        $age = 27;
+
+       switch ($age) {
+        case 20:   //$age == 20
+            echo "Vous avez 20 ans";
+            break;
+        case 25:   //$age == 25
+            echo "Vous avez 25 ans";
+            break;
+        case 30:   //$age == 30
+            echo "Vous avez 30 ans";
+            break;
+        
+        default:
+            echo "Votre âge n'a pas été identifié";
+            break;
+       }
+        
+        ?>
+    </article>
 </body>
 
 </html>
