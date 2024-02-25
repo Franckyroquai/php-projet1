@@ -170,6 +170,26 @@
         var_dump($resultat_test);
         ?>
     </article>
+    <article>
+        <br>
+        <h3>Les conditions If Else</h3>
+    </article>
+    <article>
+        <br>
+        <?php
+        $age = "z";
+        if ($age > 18) {
+            echo "La personne est majeure !";
+        }elseif ($age<18 && $age>0) {
+            echo "La personne est mineure !!!";
+        }
+        else{
+            echo "L'age n'est pas défini !";
+        }
+        echo "<br>Fin du document";
+        
+        ?>
+    </article>
 </body>
 
 </html>
