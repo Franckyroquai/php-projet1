@@ -155,6 +155,21 @@
             // !== différence au sens strict
         ?>
     </article>
+    <article>
+        <br>
+        <h3>Les types de variables en php</h3>
+    </article>
+    <article>
+        <br>
+        <?php
+        //scalaire
+        $nombre = -50;
+        $nombre2 = -3.141567;
+        $texte = "Voici du texte";
+        $resultat_test = true;
+        var_dump($resultat_test);
+        ?>
+    </article>
 </body>
 
 </html>
