@@ -218,6 +218,20 @@
         
         ?>
     </article>
+    <article>
+        <br>
+        <h3>La boucle For</h3>
+    </article>
+    <article>
+        <br>
+        <?php
+        
+        for ($i=0; $i < 100 ; $i=$i+2) { 
+            echo"<h1>Bonjour".$i."</h1>";
+        }
+        
+        ?>
+    </article>
 </body>
 
 </html>
