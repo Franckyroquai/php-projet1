@@ -264,6 +264,65 @@
         
         ?>
     </article>
+    <article>
+        <br>
+        <h3>Les tableaux</h3>
+    </article>
+    <article>
+        <?php
+        // $tableau = array("bleu","jaune","rouge",45);
+        // $tableau[0] = "Verte";
+
+        // echo $tableau[2];
+        // var_dump($tableau);
+
+        /*$marque = array();
+        var_dump($marque);
+        echo "<br>";
+        $marque[0] = "Renault";
+        $marque[1] = "Ford";
+        var_dump($marque);*/
+
+        /*$tableau = ["bleu","jaune","rouge",45];
+        var_dump($tableau);    */
+
+        /*$tableau = array();
+        $tableau["id"] = "45";
+        $tableau["nom"] = "Paul";
+        $tableau["Marque"] = "Renault";
+        $tableau["info"] = array(12, "jaune");
+        var_dump($tableau);
+        echo"<br>";
+        echo $tableau["id"];*/
+
+        // const MARQUE = array("Renault","Ford");
+        // echo MARQUE[0];
+        // var_dump(MARQUE);
+
+        //define("MARQUE",array("Renault","Ford"));
+        //var_dump(MARQUE);
+
+        // for ($i=0; $i < 2; $i++) { 
+        //     echo MARQUE[$i]."<br>";
+        // }
+
+        /*foreach (MARQUE as $key => $value) {
+            echo "La clé est : ".$key.", sa valeur est : ". $value."<br>";
+        }*/
+
+        $personne = array();
+        $personne["nom"] = "Dupond";
+        $personne["prenom"] = "Julie";
+        $personne["email"] = "julie456@julie.fr";
+        $personne["Tel"] = "0123456789";
+        
+        $result = in_array("Julie", $personne);
+        //var_dump(sizeof($personne));
+        var_dump($result);
+        
+        
+        ?>
+    </article>
 </body>
 
 </html>
