@@ -323,6 +323,37 @@
         
         ?>
     </article>
+    <article>
+        <br>
+        <h3>Les Fonctions</h3>
+    </article>
+    <article>
+        <br>
+        <?php
+        // phpinfo();
+        function prixTTC($prixHT=20){
+            $tva = 20;
+            return $prixHT*(100+$tva)/100;
+        }
+        $valeurTTC = prixTTC(500);
+        echo "Le prix du produit est : " .$valeurTTC;
+
+        function concat($mot1, $mot2){
+            return $mot1." ".$mot2;
+
+        }
+
+        $concat = concat("Bonjour", "Tony");
+        echo "<br>".$concat;
+
+
+        function test(?string $var):?string{
+            return $var;
+        }
+        var_dump(test(NULL));
+        
+        ?>
+    </article>
 </body>
 
 </html>
