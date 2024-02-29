@@ -354,6 +354,40 @@
         
         ?>
     </article>
+    <article>
+        <br>
+        <h3>Les Portés de Variables</h3>
+    </article>
+    <article>
+        <?php
+        $tva = 50;
+            function prix2TTC(int $prixHT):float {
+                global $tva;
+                return $prixHT*(100+$tva)/100;
+            }
+            $valeurTTC = prix2TTC(700);
+            echo "Le prix du 2eme produit est : ".$valeurTTC." €";
+            echo "<br> La valeur de la 2eme tva est : ".$tva." %";
+
+            function numeroJoueur(){
+                static $numero = 0;
+                $numero++ ;
+                echo "Le joueur a le numéro : ".$numero.", et c'est bien !";
+            }
+
+            echo "<br>";
+            numeroJoueur();
+            echo "<br>";
+            numeroJoueur();
+            echo "<br>";
+            numeroJoueur();
+            echo "<br>";
+            numeroJoueur();
+
+
+
+        ?>
+    </article>
 </body>
 
 </html>
