@@ -480,6 +480,58 @@
         var_dump($_ENV);
         ?>
     </article>
+    <article>
+        <br>
+        <h3>Les Superblobales GET, POST et REQUEST</h3>
+    </article>
+    <h1>Inscriptions</h1>
+    <form class="" action="lib/traitement.php" method="post">
+        <label for="civilite">Civilité : </label>
+        <label for="monsieur">Mr </label>
+        <input type="radio" name="civilite" value="monsieur" value="madame" id="monsieur" checked="checked" />
+
+        <label for="madame">Mme </label>
+        <input type="radio" name="civilite" value="madame" id="madame" />
+
+        <label for="mademoiselle">Mlle </label>
+        <input type="radio" name="civilite" value="mademoiselle" id="mademoiselle" /></br>
+
+        <label for="email">Email : </label>
+        <input type="email" name="email" value="" id="email" placeholder="Merci de saisir votre pseudo !" /></br>
+
+        <label for="pseudo">Pseudo : </label>
+        <input type="text" name="pseudo" id="pseudo" placeholder="Merci de saisir votre pseudo !" /></br>
+
+        <label for="password">Mot de passe : </label>
+        <input type="password" name="password" value="" id="password" placeholder="Merci de saisir votre mot de passe !" /></br>
+
+        <label for="age">Age : </label>
+        <input type="number" name="age" value="" id="age" placeholder="Merci de saisir votre age !" /></br>
+
+        <label for="profession">Profession : </label>
+        <select class="" name="profession" id="profession">
+
+        <option value="ETUDIANT">ETUDIANT</option>
+
+        <option value="INFORMATICIEN" selected>INFORMATICIEN</option>
+
+        <option value="DENTISTE">DENTISTE</option>
+
+        <option value="BANQUIER">BANQUIER</option>
+
+        <option value="STATISTICIEN">STATISTICIEN</option>
+
+        <option value="STADIER">STADIER</option>
+        </select><br/>
+
+        <input type="submit" name="" value="Envoyer" />
+    </form>
+    <?php
+    //var_dump($_GET["profession"]);
+    //var_dump($_POST["civilite]);
+    //var_dump($_REQUEST);
+    
+    ?>
 </body>
 
 </html>
