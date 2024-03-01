@@ -388,6 +388,64 @@
 
         ?>
     </article>
+    <article>
+        <br>
+        <h3>Les Objets en PHP</h3>
+    </article>
+    <article>
+        <?php
+        class Etudiant{
+            // Les Attributs
+            private $identifiant;
+            private $nom;
+            private $filiere;
+            private $matieres;
+            private $inscrit;
+
+            // Le Constructeur de la classe
+            function __construct($ident, $nom, $filiere, $matieres){
+                $this->identifiant = $ident;
+                $this->nom = $nom;
+                $this->filiere = $filiere;
+                $this->matieres = $matieres;
+                $this->inscrit = true;
+            }
+
+
+            // Les Méthodes
+            function sepresenter(){
+                if ($this->inscrit){
+                    $result = "Mon identifiant est : ".$this->identifiant."<br>";
+                $result .= "Mon nom est : ".$this->nom."<br>";
+                $result .= "J'étudie dans la filière : ".$this->filiere."<br>";
+                $result .= "Voici mes matières : <br>";
+                foreach($this->matieres as $key => $value){
+                    $result.= $value."<br>";
+                    }
+                    return $result;
+                } else {
+                    echo "Désolé, l'étudiant n'est pas inscrit";
+                }
+        }
+        function statut(){
+            $this->inscrit = !$this->inscrit;
+        } 
+    }
+    $jean_Matiere = array("Francais", "Programmation", "Algorithme");
+    $jean = new Etudiant("AE45", "Jean", "Informatique", $jean_Matiere);
+
+    echo $jean->sepresenter();
+
+    echo "<br>";
+
+    $john_matiere = array("Philosophie", "Anglais", "Art");
+    $john = new Etudiant("AZ34","John", "Philosophie", $john_matiere);
+    $john->statut();
+    echo $john->sepresenter();
+
+        
+        ?>
+    </article>
 </body>
 
 </html>
