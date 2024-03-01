@@ -446,6 +446,20 @@
         
         ?>
     </article>
+    <article>
+        <br>
+        <h3>L'inclusion de fichiers externes</h3>
+    </article>
+    <article>
+        <?php
+        //include("variables.php");
+        //include_once ("variables.php");
+        require("variables.php");
+         require_once ("variables.php");
+        echo maxTowInt(560, 80);
+        
+        ?>
+    </article>
 </body>
 
 </html>
