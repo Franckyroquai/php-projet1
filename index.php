@@ -460,6 +460,26 @@
         
         ?>
     </article>
+    <article>
+        <br>
+        <h3>Les Superblobales</h3>
+    </article>
+    <article>
+        <?php
+        $prenom = "Jean";
+        $age = 60;
+        //var_dump($GLOBALS);
+        function test1(){
+            return $GLOBALS["prenom"];
+        }
+         echo test1();
+         echo "<br>";
+        //var_dump($_SERVER);
+        $_ENV["USER"] = "Paul";
+        $_ENV["AGE"] = 40;
+        var_dump($_ENV);
+        ?>
+    </article>
 </body>
 
 </html>
