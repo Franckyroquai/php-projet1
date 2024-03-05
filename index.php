@@ -1,3 +1,6 @@
+<?php
+    session_start()
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -403,7 +406,7 @@
             private $inscrit;
 
             // Le Constructeur de la classe
-            function __construct($ident, $nom, $filiere, $matieres){
+            function __construct($ident, $nom, $filiere, $matieres,){
                 $this->identifiant = $ident;
                 $this->nom = $nom;
                 $this->filiere = $filiere;
@@ -532,6 +535,24 @@
     //var_dump($_REQUEST);
     
     ?>
+    <article>
+        <br>
+        <h3>La Superblobale SESSION</h3>
+    </article>
+    <article>
+        <!-- mettre 
+        ?php
+            session_start()
+        ?>
+        en haut de la page -->
+        <?php
+        $_SESSION["nom_user"] = "Jean";
+        $_SESSION["age"] = 67;
+        //var_dump($_SESSION);
+        echo "Le nom de l'utilisateur est : ".$_SESSION["nom_user"];
+        
+        ?>
+    </article>
 </body>
 
 </html>
