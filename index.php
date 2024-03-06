@@ -582,6 +582,20 @@
         
         ?>
     </article>
+    <article>
+        <br>
+        <h3>Les Variables FILESen PHP</h3>
+    </article>
+    <article>
+        <form class="" action="" method="post" enctype="multipart/form-data" >
+            <input type="hidden" name="MAX_FILES_SIZE" value="2097152" >
+            <input type="file" name="fichier1" ><br>
+            <input type="submit" value="Envoyer" >
+        </form>
+        <?php
+        var_dump($_FILES);
+        ?>
+    </article>
 </body>
 
 </html>
